@@ -1,0 +1,48 @@
+# Test Project
+
+This project is a simple web application that allows users to manage items and their details. It is built using PHP and MySQL.
+
+## Project Structure
+
+```
+.gitattributes
+AggiungiItem.php
+AggiungiItemDetail.php
+Detail.php
+Home.php
+Item.php
+ItemDetail.php
+LICENSE
+runar.sql
+style.css
+```
+
+## Files Description
+
+- **AggiungiItem.php**: This file contains the code to add a new item to the database.
+- **AggiungiItemDetail.php**: This file contains the code to add a new item detail to the database.
+- **Detail.php**: This file displays the details of a specific item.
+- **Home.php**: This is the homepage of the application, providing links to the item and item detail pages.
+- **Item.php**: This file displays all items in the database.
+- **ItemDetail.php**: This file displays all item details in the database.
+- **LICENSE**: This file contains the MIT license for the project.
+- **runar.sql**: This file contains the SQL dump to create and populate the database.
+- **style.css**: This file contains the CSS styles for the application.
+
+## Database
+
+The project uses a MySQL database named `Runar` with the following tables:
+
+- **item**: Stores the items with columns `IdItem` and `Nome`.
+- **itemdetail**: Stores the item details with columns `IdItemDetail`, `ItemId`, `Amount`, and `IdItem`.
+
+## Setup
+
+1. Clone the repository to your local machine.
+2. Import the `runar.sql` file into your MySQL database to create and populate the `Runar` database.
+3. Update the database connection details in the PHP files if necessary.
+4. Start your local server (e.g., XAMPP) and navigate to `Home.php` to start using the application.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
