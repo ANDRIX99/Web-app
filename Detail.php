@@ -27,6 +27,7 @@
             </tr>
             <?php 
                 // SELECT Nome FROM item INNER JOIN itemdetail WHERE item.IdItem = itemdetail.IdItem AND itemdail.ItemId <> 0;
+                // with this query I can see all the detailed item names of an item
                 $value = $_REQUEST['value'];
                 $sql = "SELECT Nome FROM item INNER JOIN itemdetail WHERE item.IdItem = itemdetail.IdItem AND itemdetail.ItemId = $value";
                 

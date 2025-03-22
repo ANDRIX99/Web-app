@@ -38,7 +38,8 @@
             <!-- <input type="number" placeholder="itemid" name="ItemId" /> -->
             <select name="ItemId">
                 <option value="0" default>Null</option>
-                <?php 
+                <?php
+                    // see all the item name for my select
                     $result = mysqli_query($conn, "SELECT * FROM item");
                     $row = null;
 
@@ -55,6 +56,7 @@
             <!-- <input type="number" placeholder="iditem" name="IdItem" /> -->
             <select name="IdItem">
                 <?php 
+                    // see all the item name for my select
                     $result = mysqli_query($conn, "SELECT * FROM item");
                     $row = null;
 

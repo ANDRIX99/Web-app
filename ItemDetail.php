@@ -38,6 +38,7 @@
             <tr>
                 <?php
                     // SELECT item.Nome, itemdetail.IdItemDetail, itemdetail.ItemId, itemdetail.Amount FROM item INNER JOIN itemdetail WHERE item.IdItem = itemdetail.IdItem;
+                    // with this query I can see all the item name
                     $sql = "SELECT item.Nome, itemdetail.IdItemDetail, itemdetail.ItemId, itemdetail.Amount, itemdetail.IdItem FROM item INNER JOIN itemdetail WHERE item.IdItem = itemdetail.IdItem;";
                     $result = mysqli_query($conn, $sql);
                     $row = null;
